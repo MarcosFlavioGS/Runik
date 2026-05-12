@@ -1,0 +1,3 @@
+(library
+ (name caraml)
+ (public_name caraml))

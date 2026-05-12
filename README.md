@@ -32,21 +32,31 @@ let map = |f, list| match list {
 };
 ```
 
-## Building
+## Implementation
 
-The project uses Prefect (a custom build tool) for managing the C-based implementation: [Prefect Repo](https://github.com/MarcosFlavioGS/Prefect.git)
+Caraml is implemented in **OCaml**, built with [dune](https://dune.build/). It is a learning project — the interpreter is being built phase-by-phase (lexer → parser → evaluator). See `docs/` for the tutorial trail.
+
+### Requirements
+
+- OCaml >= 5.0
+- dune
+- alcotest (for tests)
 
 ```bash
-# Build the project
-prefect build
+opam install . --deps-only --with-test
+```
 
-# Run 
-prefect run
+### Building & Running
+
+```bash
+dune build                       # compile
+dune exec caraml -- main.cml     # run the interpreter on a source file
+dune runtest                     # run the test suite
 ```
 
 ## Status
 
-Caraml is currently in early development. The core lexer and basic infrastructure are being implemented.
+Early development. Project scaffolding is in place; **Phase 1 (lexer)** is next. See `docs/` for current progress.
 
 ## License
 
