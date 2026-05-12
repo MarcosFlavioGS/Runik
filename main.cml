@@ -6,8 +6,14 @@ let num = 42;
 # Typing
 let str: string = "Hello World !";
 
+# Typed function
 let fun (arg1: number) (arg2: string) {
 	# Print string
+	println "{}" arg2;
+}
+
+# Untyped function
+let fun arg1 arg2 {
 	println "{}" arg2;
 }
 

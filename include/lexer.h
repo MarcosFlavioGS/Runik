@@ -16,6 +16,10 @@ typedef enum {
     // …add more as needed
 } token_type;
 
+/*
+** Token typedef
+** represents a single token
+*/
 typedef struct {
 	char* identifier;
 	union {
@@ -27,6 +31,12 @@ typedef struct {
 	token_type type;
 } token_t;
 
+/*
+** Token dinamic array
+** - tokens: list of tokens
+** - count: How many items
+** - capacity: total space available allocated
+*/
 typedef struct {
 	token_t* tokens;
 	size_t count, capacity;

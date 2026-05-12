@@ -5,9 +5,6 @@
 (src
   (
   /src/main.c
-  /src/start/start.c
-  /src/start/lexer/lexer.c
-  /src/start/lexer/init_list.c
   /src/argument_parser/argv.c))
 (compiler
   gcc)
