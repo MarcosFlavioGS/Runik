@@ -1,4 +1,4 @@
-<img src="https://github.com/user-attachments/assets/da1296ee-c3df-48c7-9529-e30d60a4c3f4" width="500" height="500">
+<img width="1408" height="768" alt="Caraml2" src="https://github.com/user-attachments/assets/5ba93d29-b94c-4ac8-b127-e02ccf7825b2" />
 
 # Caraml
 
